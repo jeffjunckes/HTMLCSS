@@ -47,17 +47,19 @@ body{
 
 
 }
-.divMain{
+.divMain1{
+	float: left;
+
 	
 }
-.floates{
-	float: left ;
-}
+
+/*
 .clear{
 	clear: both;
-}
+}*/
 #maincategoria{
-	width: 900px;
+	width: 80%;
+	text-align: center;
 	margin-right: 100px;
 	margin-left: 100px ;
 	background: white;
@@ -71,9 +73,9 @@ body{
 #postagemRecente{
 	background: gray;
 }
-.divmain2{
+.direita{
 
 	width: 30;
 	height: 30;
-	position: absolute;
+	float: right;
 }
