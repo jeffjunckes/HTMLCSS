@@ -1,0 +1,24 @@
+/*
+modelo de caixa
+*/
+.conteudo{
+	border: 1px solid red;
+	/*padding-top:20px ;aplica um espaçamento superior de 20 px
+	padding-right: 20px;aplica um espaçamento a direita
+	padding-left: 20px;aplica um espaçamento a esquerda
+	padding-bottom: 20px;aplica um espaçamento em baixo*/
+	
+	/*padding: 20px 15px 10px 5px; começa sempre pelo top e em sentido horario*/
+	padding: 20px; /*todas ficam com 20*/
+	/*padding: 20px 15px; top e bot com 20 direita e esquerda com 15*/
+	/*margin-top: 20px; espaçamento entre duas caixas(tóp)
+	margin-right: 20px ;
+	margin-bottom: 20px ;
+	margin-left: 20px ;*/
+	margin: 20px 15px 10px 5px; /*sempre começando pelo topo sentido horario*/
+	/*quando aplicamos margem no conteudo em baixo do conteudo
+	de cima  e tem uma uma no top  do contedo de baixo elas se sobrepoe
+	como definição e sempre usada a margem maior*/
+
+	width: 150px; largura da caixa do conteudo
+}

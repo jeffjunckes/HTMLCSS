@@ -1,0 +1,26 @@
+a{
+	padding: 5px;
+	text-decoration: none; /*define a decoração do texto
+	como link vem padrao underline, colocamos none para tirar o 
+	underline*/
+}
+a:link{ /*usamos para definir um estado do link. que ainda nao foi visitado*/
+	color: #b9c941;
+}
+a:visited{ /* define o estado de um link ja visitado */
+	color: #b9c941;
+}
+
+a:hover{ /*define a cor do link quando você passa o mause por cima*/
+	color: #FFF;
+	background:#6d790f ;
+}
+a:active{ /*define o estado do link quando você mantem o click pressionado*/
+	color: #e4f371;
+}
+/*IMPORTANTE, SEMPRE MANTER ESSA ORDEM!*/
+/*CASO QUEIRA DEIXAR DA MESMA COR DOIS ESTADOS BASTA COLOCAR UMA , 
+EX:  a: link, visited{ vai formatar os dois ao mesmo tempo.
+	
+}*/
+

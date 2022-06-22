@@ -1,0 +1,43 @@
+.conteudo{
+	background: blue;
+	border: 1px solid gray;
+	width: 150px;
+	height: 150px;
+	margin: 10px;
+	float: left;
+}
+/*quando você define o float na classe principal onde tem mais de um elemento
+os elementos se comportam como se fosse uma fila e nao se sobrepoem
+um ao outro, fazendo com que fiquem um do lado do outro ordenado*/
+.conteudo1{
+	background: red;
+	border: 1px solid gray;
+	width: 150px;
+	height: 150px;
+	margin: 10px;
+	float: left;/*opções para float(left, right e none)*/
+	/*float faz com que os conteudos flutuem , na tela, ou a esqueda 
+	ou a direita bastante usado para colocar um conteudo do lado do outro
+	funciona como se o conteudo estivesse dançando na tela, você consegue
+	colocar ele em cima de outro conteudo tambem*/
+}
+.clearExemplo{
+	clear: left ;/*podemos usar no clear , left right both e none*/
+	/*esse metodo é para interromper o float ja que se continuarmos
+	os textos seriam exibidos ao lado dos conteudos, e precisamos usar
+	o clear para começar uma linha abaixo. (obviamente se vocÇe quiser
+	interromper os fluxos a direita você utilizaria o right mas aqui estamos
+	usando a esqueda por isso usamos o left.*/
+}
+.clear{
+	clear: both;/*utilizamos para limpar o fluxo de float em ambos,
+	independente se esta a esquerda ou a direita.*/
+}
+.principal{
+	border:1px solid red ;
+	background: green;
+}
+/*INFORMAÇÃO IMPORTANTE, COMO OS FLOATS SAO UTILIZADOS COMO SE FOSSEM
+IDEPENDENTES, ELES TAMBEM NAO INTERAGEM COM O BACKGROUND, OU SEJA PARA VOCÊ
+COLOCAR ALGO DE FUNDO NOS FLOATS VOCÊ DEVE CRIAR UMA DIV PARA LIMPAR O FLUXO
+E ESSA DIV SE ENCARREGARA DE EMPURRAR O BACKGOUND.*/

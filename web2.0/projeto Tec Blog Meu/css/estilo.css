@@ -1,0 +1,79 @@
+
+
+
+body{
+	background: #E4E1E1
+;
+}
+
+#cabecalho{
+	background: orange;
+	height: 50px;
+	margin: 5px auto;
+	text-align: center;
+	padding: 30px;
+
+	
+}
+
+.grande{
+	font-size: 30px;
+}
+#branco{
+	color: white;
+}
+.links-cabecalho{
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	margin-top: 200px ;
+	a: link::color: #b9c941 ;
+
+}
+#margem{
+	margin: 10px;
+}
+
+
+.linkMain{
+	text-decoration: none	;
+	color: orange;
+}
+
+#mainPrincipal{
+	padding: 20px;
+	background: white;
+	height:900px;
+
+
+}
+.divMain{
+	
+}
+.floates{
+	float: left ;
+}
+.clear{
+	clear: both;
+}
+#maincategoria{
+	width: 900px;
+	margin-right: 100px;
+	margin-left: 100px ;
+	background: white;
+	padding: 30px;
+
+
+}
+.tituloPostagem{
+	color: orange;
+}
+#postagemRecente{
+	background: gray;
+}
+.divmain2{
+
+	width: 30;
+	height: 30;
+	position: absolute;
+}

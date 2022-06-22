@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Tamanho de textos</title>
+		<style type="text/css">
+
+				div{
+					font-size: 30px;
+				}
+				
+			.texto{
+				/*
+				px-> tamanho fixo 
+				% -> tamanho relativo ao tamanho padrao adotado pelos brauser
+				em -> tamanho relativo ao container pai
+				*/
+				/*font-size:16px; por padrao o texto tem 16 pixel
+			}*/
+				/*font-size: 100%;  100% do padrao do brauser se colocar por exemplo 200%
+				vai ser 2x o tamanho padrao, no mesmo seria colocar 32px */
+				font-size: 2em; /* no caso seria Xem e usaria (X * padrao da fonte pai) */
+			}
+			.texto2{
+				font-size: 1em;
+
+
+
+		</style>
+
+	</head>
+	<body>
+		<div> <!--container pai se apagar o div , body seria o container pai-->
+		<p class="texto">Conteudo 1</p>
+		<p class="texto2">Conteudo 2</p>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,226 @@
+
+ADICIONANDO IMAGEM!!!!
+<!doctype html>
+
+<html>
+	
+	<head>
+		<title>Meu site</title>
+		<meta charset="utf-8"><!--define a codificação(de acentuação)-->
+	</head>
+	
+
+	<body>
+		<!--width significa largura e height significa altura para ficar proporcinal apague um-->
+		<img src="imagens/ferrari.jpg"width="600"height="200"><!-- procura a imagem e coloca no site.-->
+
+
+	</body>
+</html>
+
+ADICIONANDO LINK!!!!!!!!!!!
+
+<head>
+		<title>Meu site</title>
+		<meta charset="utf-8"><!--define a codificação(de acentuação)-->
+	</head>
+	
+
+	<body>
+		<!--href(hiperlink reference-->
+		<!--dentro do A colocamos o texto do hiperlink e dentro do Href o link que queremos que vá-->
+		<!--nao esquecer que para link externo precisa do http://www.-->
+		<a href="contato.html">
+		 	Contato
+		</a> <br>
+		<a href="">
+			Pagina inicial
+		</a>
+		<p><h2>Pagina principal</h2>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+		</p>
+		<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+		</p>
+	</body>
+</html>
+
+
+FAZENDO TABELA DENTRO DO SITE!!!
+
+	<head>
+		<title>Meu site</title>
+		<meta charset="utf-8"><!--define a codificação(de acentuação)-->
+	</head>
+	
+
+	<body>
+		<h2>LISTA DE PRODUTOS!</h2>
+		<table border="2"> <!-- ao definir border dizemos que a tabela tera borda de 2px-->
+			
+			<tr id="linha1"><!-- table row(linha da tabela)-->
+				<th>codigo</th><!--table header(para identificar o cabeçalho da tabela)-->
+				<th>produto</th> <!--novo dado na linha(outra coluna mesma linha) -->
+				<th>preço</th> <!--com TH automaticamente centraliza e coloca em negrito.-->
+			</tr> 
+			<tr id="linha2"><!-- nova linha -->
+				<td>001</td><!-- td para incluir novo dado na linha -->
+				<td>notebook</td>
+				<td>Rs$ 2.500,99</td>
+			</tr>
+			<tr id="linha3">
+				<td>002</td>
+				<td>TAblet</td>
+				<td>R$ 999,99</td>
+			</tr>
+		</table>
+
+	</body>
+</html>
+
+UM POUCO MAIS SOBRE TABELAS!!(SE QUISER COLOCAR LINK OU IMAGEM.)
+
+<body>
+		<h2>LISTA DE PRODUTOS!</h2>
+		<table border="2" width="100%"> <!--colocamos width para definir a largura.
+		tambem podemos com % para definir quantos % vai ocupar a tabela em relação
+		ao navegador, nao importanto se minimiza ou maximiza. -->
+			
+			<tr id="linha1"><!-- table row(linha da tabela)-->
+				<th>codigo</th><!--table header(para identificar o cabeçalho da tabela)-->
+				<th>produto</th> <!--novo dado na linha(outra coluna mesma linha) -->
+				<th>preço</th> <!--com TH automaticamente centraliza e coloca em negrito.-->
+			</tr> 
+			<tr id="linha2"><!-- nova linha -->
+				<td>001</td><!-- td para incluir novo dado na linha -->
+				<td><a href="">clique aqui</a></td><!-- para criar link-->
+				<td>Rs$ 2.500,99</td>
+			</tr>
+			<tr id="linha3">
+				<td>002</td>
+				<td>
+					<img src="imagens/ferrari.jpg "width="80" height="">
+					<!--para chamar imagem(tambem podemos usar %) -->
+				</td>
+				<td>R$ 999,99</td>
+			</tr>
+		</table>
+
+	</body>
+
+
+	PARA ALINHAR TABELA COM COLSPAN E ROWSPAN!!!
+
+<body>
+		<h2>LISTA DE PRODUTOS!</h2>
+		<table border="2" width="100%"> <!--colocamos width para definir a largura.
+		tambem podemos com % para definir quantos % vai ocupar a tabela em relação
+		ao navegador, nao importanto se minimiza ou maximiza. -->
+			
+			<tr id="linha1"><!-- table row(linha da tabela)-->
+				<th>codigo</th><!--table header(para identificar o cabeçalho da tabela)-->
+				<th>produto</th> <!--novo dado na linha(outra coluna mesma linha) -->
+				<th>preço</th> <!--com TH automaticamente centraliza e coloca em negrito.-->
+			</tr> 
+			<tr id="linha2"><!-- nova linha -->
+				<td>001</td><!-- td para incluir novo dado na linha -->
+				<td>tablet</td>
+				<td>Rs$ 2.500,99</td>
+			</tr>
+			<tr id="linha3">
+				<td>002</td>
+				<td>Notebook</td>
+				<td>R$ 999,99</td>
+			</tr>
+			<tr>
+				<td rowspan="2">desconto</td><!--rowspan para agrupar linha -->
+				<td colspan=""> cupon 1  </td>
+				<td colspan="">  R$ -10 </td> <!--colsparn=""para agrupar coluna(extenção da coluna(quantas celulas ela vai ocupar))-->
+				
+			</tr>
+			<tr>
+				<td colspan="1"> cupom 2 </td>
+				<td > R$ -12 </td> <!--colsparn=""para agrupar coluna(extenção da coluna(quantas celulas ela vai ocupar))-->
+			</tr>
+			<tr>
+				<td colspan="2">total: </td>
+				<td> R$ 3.478,98</td>
+
+			</tr>
+
+		</table>
+
+	</body>
+
+	FORMULARIOS!!!!!
+
+		<body>
+		<h2>Login</h2>
+		<form action="processo.php"><!-- form para criar formulario
+			utilizamos action para saber para onde os dados de entrada dentro
+			do formulario vai tratar os dados, nesse caso em processo.php-->
+
+			Login:<br>
+			<input type="text" name="login Teste"><br><!--criamos uma caixa com o imput
+				definimos o tipo dele que é texto-->
+				<!--name utilizamos para passar os dados para proxima tela 
+					e na proxima tela faremos o processamento.-->
+			senha:<br>
+			<input type="password" name="senha"><br><!--criamos um input para entrada
+			de dados definimos que ela é password para que nao apareça-->
+			<input type="submit" value="logarSubmit"><br><!--value define o texto para o botao
+				e o input submit define que é um botao na tela que vai enviar dados
+				pro lugar que foi definido no form.-->
+			<input type="button" name="LogarButtom"><br>
+			<!--buttom para criar um botao na tela e acessar algo como outra pag.-->
+				<!--OBSERVE QUE ESSA MANEIRA NAO É SEGURA POIS A SENHA FICA
+					NO URL DO PROGRAMA(USAMOS APENAS PARA APRENDER OS INPUTS!!!!)-->
+
+		</form>
+		<h2>cadastre-se</h2>
+		<form>
+			login:<br>
+			<input type="text" name="login"><br><br>
+
+			sexo: <br>
+			<input type="radio" name="sexo" value="M">masculino<br><!-- usamos o tipo radio para o usuario selecionar com bolinha--> 
+			<input type="radio" name="sexo" value="F">feminino<br><br><!--para que nao aconteça dos dois ficarem marcados colocamos o mesmo name para os dois. e o value é para poder diferenciar o que foi feito quando formos tratar via linguagem de programação-->
+
+			interesses<br>
+			<input type="checkbox" name="interesses"> futebol<br> <!--no caso do checkbox aparece um quadrado para selecionar ao invez de o cirsulo do radio. no checkbox tambem nao importa se tem o mesmo nome, podemos escolher mais de uma caixinha-->
+			<input type="checkbox" name="interesses"> cursos<br>
+			<input type="checkbox" name="interesses"> moda<br><br>
+
+			Estado<br>
+			<select name="estado"><!--select cria uma caixa que chamamos de combo, com varias opções para você selecionar uma , definida em option-->
+				<option value="sp">SP</option> <!--usamos o value para o programa que trata o dado entender o que significa cada opção-->
+				<option value="mg">MG</option>
+				<option value="rj">RJ</option>
+				<option value="rs">RS</option>
+
+			</select><br><br>
+
+			observalçoes: <br>
+
+			<textarea> </textarea><br><br> <!--area de texto -->
+			<input type="submit" value="cadastrar">
+		</form>
+
+	</body>
+
+
+	CARACTERES ESPECIAIS !!!!!!
+	
+
+
+
+
+
+
+
+
+
+
+
+
+

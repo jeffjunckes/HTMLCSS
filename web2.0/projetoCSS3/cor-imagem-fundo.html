@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Cor e imagem de fundo</title>
+		<style type="text/css">
+			body{
+				background-image: url('imagens/yoshi.png');/*para colocar imagem de fundo*/
+				background-repeat: no-repeat;/*usado para nao repetir a imagem, pois se colocar apenas no backgound-imagem ela vai se repetir pois o padrao é repeat */
+				/*podemos usar tambem o repeat-X para repetir a imagem no eixo horizontal e 
+				repeat-y para repetir a imagem no eixo vertical.*/
+				background-attachment: scroll; /*usado fixed para a imagem ficar fixa no plano de fundo
+				você pode rolar a pagina e ela continua*/
+				/*backgound-attachment: scroll; a imagem fica parada, quando você rola a 
+				imagem ela sai da tela*/
+				background-position: center right ; /*para a imagem ficar centralizada primeiro valor na horizonal e o segundo na vertical(primeiro valor (left, right, center)
+				segundo valor (top, center, bottom)) */
+			} /* aqui definimos o fundo para a pagina toda (body) */
+			.fundo{
+				background: blue url('imagens/yoshi.png') repeat-x fixed center;/*aqui definimos a cor de fundo e a imagem de fundo  ela repetiria apenas no eixo X e ficaria fixa. na posição central*/
+				
+			} /*aqui definimos apenas para quem esta na classe por enquanto*/
+
+
+		</style>
+	</head>
+	<body>
+
+		<h1 class="fundo">Conteudo de titulo 1</h1>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p> 
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+
+
+
+	</body>
+</html>

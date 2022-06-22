@@ -1,0 +1,32 @@
+.conteudo1{
+	border: 1px solid red;
+	background: orange;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	z-index: 2;/*define qual elelento aparece primeiro(sobreposto),
+	lembrando que o natural é pela ordem de acordo de como o 
+	elemento está no html*/
+	/*QUANTO MAIOR O NUMERO A PRIORIDADE É DO MAIOR NUMERO.*/
+	/*SE O Z-INDEX FOR O MESMO, SEGUE A ORDEM DO DOCUMENTO.*/
+}
+.conteudo2{
+	border: 1px solid red;
+	background: green;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 80px;
+	left: 80px;
+	z-index: 1 ;
+}
+.conteudo3{
+	border: 1px solid red;
+	background: yellow;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 160px;
+	left: 160px;
+	z-index: 0 ;
+}

@@ -1,0 +1,514 @@
+inline style, aplica a formatação direto no elemento
+internal style sheet, coloca o estilo dentro do codigo
+external style sheet,coloca a formatação em um arquivo externo(recomendado)
+
+INLINE STYLE!!!!!!!!!!
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Inline Style</title><!-- aplicar o css direto na linha-->
+	</head>
+
+	<!--com esse estilo se fosse trocar todos os paragrafos seria muito problematico e demorado-->
+	<body>
+		<h1 style="color: blue;">Estilo CSS (cascating style sheets)</h1>
+
+		<p style=" color: red; ">  <!--estrutura que define um codigo css (propriedade, valor)-->
+		On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will,
+		</p>
+		<p style="color: red;">
+		which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.
+		</p>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+SELETORES(INTERNAL STYLE SHEET)!!!!!
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Inline Style</title>
+		<!--style , utiizado para formatar css, P para dizer que  o que quero formatar
+			sao os paragrafos, abre e fecha conchetes para definir onde começa e termina
+			e dentro dos conchetes faço a formatação, se eu quisesse formatar todo body por exemplo eu mudaria o P para body.-->
+
+		<style type="text/css">
+			p{
+				color: red;
+
+
+			}
+			h1{
+				color: blue;
+			}
+
+
+
+		</style> 
+
+
+	</head>
+
+	
+	<body>
+		<h1>Estilo CSS (cascating style sheets)</h1>
+
+		<p >  
+		On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will,
+		</p>
+		<p >
+		which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.
+		</p>
+		<h1>Formatações</h1>
+
+		<p >  
+		On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will,
+		</p>
+		<p >
+		which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.
+		</p>
+	</body>
+</html>
+
+
+
+
+
+CLASSES E IDS!!!!!
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Classes E IDs</title>
+		
+		<!--o (.) define que estamos criando uma classe que nesse caso é a classe azul(linha19)-->
+		<!--o (#) define que estamos criando um ID(linha 23) como é usado uma unica vez, e é para definir uma formatação para uma determinada tag com o mesmo nome, utilizamos o ID dentro da Tag no caso o Body(linha 37) e a formatação dele será na linha 23 com o id de mesmo nome!.-->
+		<style type="text/css">
+			p{
+				color: red;
+
+
+			}
+			h1{
+				color: green;
+			}
+
+			.azul{
+				color: blue;
+			}
+			#principal{
+
+				background: white;
+
+			}
+
+
+
+		</style> 
+
+
+	</head>
+
+	
+	<body id="principal">
+		<h1 class="azul">Estilo CSS (cascating style sheets)</h1>
+		<!--criamos a classe na linha 19 e definimos o paragrafo sendo da classe, sendo assim vai ganhar os atributos do que definimos na linha 19 que no caso é cor azul.-->
+
+		<p class="azul">  
+		On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will,
+		</p>
+		
+		<p >
+		which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.
+		</p>
+		<h1>Formatações</h1>
+
+		<p >  
+		On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will,
+		</p>
+		<p >
+		which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.
+		</p>
+	</body>
+</html>
+
+
+
+DIV E SPAN!!!!(DIV UM EM BAIXO DO OUTRO, SPAN UM DO LADO DO OUTRO.)
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<title>DIV E SPAN</title>
+		
+		<!--o (.) define que estamos criando uma classe que nesse caso é a classe azul(linha19)-->
+		<!--o (#) define que estamos criando um ID(linha 23) como é usado uma unica vez, e é para definir uma formatação para uma determinada tag com o mesmo nome, utilizamos o ID dentro da Tag no caso o Body(linha 37) e a formatação dele será na linha 23 com o id de mesmo nome!.-->
+		<style type="text/css">
+	
+			#topo{
+				background: blue;
+			}
+			#conteudo{
+				background: red;
+						}
+			#rodape{
+				background: green;
+			}
+			#assinatura{
+				background: pink;
+			}
+			
+			.produto{
+				background: gray;
+				margin: 10px;
+			}
+			.azul{
+				color: blue;
+			}
+
+
+		</style> 
+
+
+	</head>
+
+	
+	<body>
+		<!--div é para dividir seu site em conteudos! ela ocupa todo o espaço da tela. ou seja largura 100%  e fica um abaixo do outro-->
+		<div id="topo">
+			<img src="imagens/amazon.png" width="200" >
+			<ul>
+				<li>Home</li>
+				<li>Produtos</li>
+				<li>Contato</li>
+			</ul>
+		</div>
+		<div id="conteudo">
+			<div class="produto">
+				produto1
+			</div>
+			<div class="produto">
+				produto1
+			</div>
+			<div class="produto">
+				produto1
+			</div>
+		</div>
+		<!--aqui utilizamos o span para deixar um elemento da cor azul(spicificada na classe linha 29 ) nota-se que ficou na mesma linha, diferentemente se colocassemos <p></p> que ficaria um em baixo do outro ja que é um elemento blockchain-->
+		<div id="rodape">
+			Todos os <span class="azul">direitos</span> Reservados
+		</div>
+		<!--span é um elemento inline quer dizer que ele agrupa seus elementos linha a linha ou seja um do lado do outro.--> 
+		<span id="assinatura">
+			jamilton
+		</span>
+		<span>
+			damasceno
+		</span>
+	</body>
+</html>
+
+
+
+BORDAS!!!
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<title>BORDAS</title>
+		
+		<!--ao utilizar a propriedade border definimos 3 valores.1-espessura 2-tipo 3-cor--->
+		<style type="text/css">
+	
+			#conteudo{
+				/*border: 10px inset red ;*/ /* para comentar em css */
+				/*podemos tambem definir bordas linha a linha como abaixo.*/
+				/*se formos definir cores diferentes para a borda, sempre começa do topo em sentido horario, da mesma forma os outros.*/
+				border-color: red green yellow blue;
+				border-width: 15px 10px 5px 1px;
+				border-style: solid dotted dashed outset;
+			}
+		</style> 
+
+
+	</head>
+
+	
+	<body >
+		<a href="https://www.w3schools.com/css/css_border.asp">bordas CSS</a>
+		<div id="conteudo">
+			
+			Bordas<br>
+			Bordas<br>
+			Bordas<br>
+
+		</div>
+	</body>
+</html>
+
+
+FONTES E CORES!!
+
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<title>FONTES E CORES</title>
+		
+		
+		<style type="text/css">
+	
+		.formatacao{
+			color: #21AF0C;
+			font-size: 30px; /*font-size define o tamanho da fonte.*/
+			font-family: "Times New Roman", Times, serif;/*define uma familia de fontes,
+			aqui definimos prioridade, se nao tiver a primeira vai a segunda, se nao, usa alguma outra da serif, quando tem mais de um nome usa aspas duplas.*/
+			}
+			
+		</style> 
+		
+
+
+	</head>
+
+	
+	<body >
+		<h1 ><a href="https://htmlcolorcodes.com/">TABELAS PARA CORES HTML</a></h1>
+		<h1><a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp">FONTES SEGURAS</a></h1>
+		<h1><a href="https://www.w3schools.com/css/css_font.asp">TIPOS DE FONTES</a></h1>
+		<h1 class="formatacao">CABEÇALHO 1</h1>
+		<p>CONTEUDO</p>
+	</body>
+</html>
+
+
+
+
+TAMANHOS DE TEXTOS.
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Tamanho de textos</title>
+		<style type="text/css">
+
+				div{
+					font-size: 30px;
+				}
+				
+			.texto{
+				/*
+				px-> tamanho fixo 
+				% -> tamanho relativo ao tamanho padrao adotado pelos brauser
+				em -> tamanho relativo ao container pai
+				*/
+				/*font-size:16px; por padrao o texto tem 16 pixel
+			}*/
+				/*font-size: 100%;  100% do padrao do brauser se colocar por exemplo 200%
+				vai ser 2x o tamanho padrao, no mesmo seria colocar 32px */
+				font-size: 2em; /* no caso seria Xem e usaria (X * padrao da fonte pai) */
+			}
+			.texto2{
+				font-size: 1em;
+
+
+
+		</style>
+
+	</head>
+	<body>
+		<div> <!--container pai se apagar o div , body seria o container pai-->
+		<p class="texto">Conteudo 1</p>
+		<p class="texto2">Conteudo 2</p>
+		</div>
+
+	</body>
+</html>
+
+
+
+
+ESTILOS E TEXTOS!!!
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Estilos de textos</title>
+		<style type="text/css">
+			body{
+				font-size: 40px;
+				font-family: "Times New Roman", Times, serif;
+			}
+			
+			.negrito{
+				font-weight: 900; /*para definir o quao negrito vai ficar o texto*/
+			}
+			.italico{
+				font-style: italic; /*define o estilo da fonte.*/
+			}
+			.formatacao1{
+				text-decoration: underline ; /*define a formatação do texto */
+				text-decoration: none;/*remove*/
+				
+				
+			}
+			.formatacao2{
+				text-decoration: overline;/*define uma linha em cima*/
+
+			}
+			.formatacao3{
+				text-decoration: line-through; /*define uma linha no meio da palavra*/
+
+			}
+
+			.texto{
+				font: bold 40px "Lucinda Sans Unicode", "Lucida Grande", sans-serif;
+
+
+			}
+
+
+		</style>
+
+
+
+	</head>
+	<body>
+
+
+		<p class="negrito">Texto Negrito</p>
+		<p class="italico">Texto italico</p>
+		<p class="formatacao1">Formatação de texto</p>
+		<p class="formatacao2">Formatação de texto 2</p>
+		<p class="formatacao3">Formatação de texto 3</p>		
+		<p class="texto">Texto</p>
+		<p>padrao</p>
+
+
+
+
+
+	</body>
+</html>
+
+
+COR E IMAGEM DE FUNDO!!!!!!!!!!!
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Cor e imagem de fundo</title>
+		<style type="text/css">
+			body{
+				background-image: url('imagens/yoshi.png');/*para colocar imagem de fundo*/
+				background-repeat: no-repeat;/*usado para nao repetir a imagem, pois se colocar apenas no backgound-imagem ela vai se repetir pois o padrao é repeat */
+				/*podemos usar tambem o repeat-X para repetir a imagem no eixo horizontal e 
+				repeat-y para repetir a imagem no eixo vertical.*/
+				background-attachment: scroll; /*usado fixed para a imagem ficar fixa no plano de fundo
+				você pode rolar a pagina e ela continua*/
+				/*backgound-attachment: scroll; a imagem fica parada, quando você rola a 
+				imagem ela sai da tela*/
+				background-position: center right ; /*para a imagem ficar centralizada primeiro valor na horizonal e o segundo na vertical(primeiro valor (left, right, center)
+				segundo valor (top, center, bottom)) */
+			} /* aqui definimos o fundo para a pagina toda (body) */
+			.fundo{
+				background: blue url('imagens/yoshi.png') repeat-x fixed center;/*aqui definimos a cor de fundo e a imagem de fundo  ela repetiria apenas no eixo X e ficaria fixa. na posição central*/
+				
+			} /*aqui definimos apenas para quem esta na classe por enquanto*/
+
+
+		</style>
+	</head>
+	<body>
+
+		<h1 class="fundo">Conteudo de titulo 1</h1>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p> 
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+
+
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

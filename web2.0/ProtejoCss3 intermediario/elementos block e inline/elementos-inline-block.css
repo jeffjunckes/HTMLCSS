@@ -1,0 +1,12 @@
+.teste{
+	background: red;
+}
+.borda{
+	border: 1px solid red;
+	/*display: inline; o caso para tornar um elemento que antes era bloco 
+	para inline */
+}
+.borda1{
+	display: block;
+
+}
