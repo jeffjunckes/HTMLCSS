@@ -1,0 +1,88 @@
+/*Herança e especificidade*/
+
+
+/*1- HERANÇA*/
+/*os elementos dentro do exemplo body herdam a formatação que escolhemos*/
+/*por padrao border e backgound nao sao herdados, ou seja você
+pode difinir manualmente*/
+body{
+	color: red;
+	border: 1px solid blueviolet;
+	background: gray;
+
+}
+/*diferente do seletor geral(*) que no caso se aplicassemos
+borda no (*) ficaria borda em tudo 
+ *{
+	border:  1px solid red;
+	AQUI TUDO FICARIA COM BORDA POIS O * APLICA EM TODOS OS ELEMENTOS
+ }
+
+*/
+
+/*2- ESPECIFICIDADE*/
+/*no caso de dois seletores iguais sempre o ultimo é que vai ser
+aplicado, ou seja aqui vai ser aplicado o red  a nao ser que 
+você aplique o texto !important, nesse caso o que vai ser escrito
+sera o seletor que esta o important que no nosso caso é o azul*/
+p{
+	color: blue !important;/*atributo que define o quao importante é uma propriedade*/
+}
+
+p{
+	color: red;
+}
+
+/*SE UM SELETOR FOR MAIS ESPECIFICO QUE OUTRO A REGRA MAIS ESPECIFICA 
+SERA APLICADA(TERA PRECEDENCIA SOBRE REGRAS MAIS GERAIS SERA APLICADO
+ANTES*/
+*{/*esse exemplo de seletor é mais geral, seleciona todo mundo
+nao é especifico*/
+	color: red;
+}
+h2{/*ja esse seletor é mais especifico ele fala para formatar apenas
+o h2 ou seja ele tem a prioridade e quem vai ser formatado é ele sobrepondo o (*)
+*/
+	color: blue;
+}
+
+h2.verde{ /*aqui definimos ainda mais especifico que apenas os
+h2 da classe verde serao formatados, ou seja ainda mais especifico
+do que o h2 normal.*/
+	color: green;
+}
+
+h2#amarelo{/*aqui fomos ainda mais especificos , onde apenas o 
+h2 com id amarelo sera formatado, sobrepondo a classe verde que 
+é mais generalista, que por sua vez sobrepoe apenas o h2 que é pra 
+todos*/
+	color: yellow;
+}
+
+
+
+/*EM RESUMO AS FORMATÃÇÕES SERAO APLICADAS QUANDO MAIS ESPECIFICOS FOMOS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

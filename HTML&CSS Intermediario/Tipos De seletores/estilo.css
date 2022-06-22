@@ -1,0 +1,89 @@
+
+/*SELETOR UNIVERSAL, SELECIONA TODOS OS ELEMENTOS DA PAGINA*/	
+*{
+	border: 1px solid red;
+}
+
+/*SELETOR DE TEXTO SELECIONA OS ELEMENTOS PELO TIPO*/
+
+h1{
+	color: green;
+}
+
+
+/*SELETOR DE CLASSE SELECIONA UM ELEMENTO CUJO ATRIBUTO
+CLASS TEM O VALOR ESPECIFICADO DEPOIS DO PONTO*/
+.verde{/*nesse selecionamos toda a classe verde*/
+	color: green;
+}
+p.verde{/*nesse selecionamos apenas os elementos P que tem a classe
+verde*/
+	color: darkgreen;
+}
+
+
+
+
+/*SELETOR DE ID SELECIONA UM ELEMENTO CUJO ATRIBUTO ID TEM 
+O VALOR ESPECIFICADO APÓS O SIMBOLO DE CERQUILHA OU JOGO DA VELHA*/
+
+
+#cabecalho{
+	border: 1px solid blue;
+}
+
+
+
+
+/*SELETOR FILHO SELECIONA UM ELEMENTO QUE É FILHO DIRETO DE OUTRO*/
+
+li>a{ /*Basicamente está dizendo que aplicaremos formataçõs 
+apenas nos links(representado pelo (a)) dentro da lista(representada
+pelo Li*/
+	color: red;
+	text-decoration: none;
+}
+
+
+/*SELETOR DE DESCENDENTE SELECIONA UM ELEMENTO QUE É DESCENDENTE DE 
+OUTRO ELEMENTO ESPECIFICADO(E NAO APENAS FILHO DIRETO DESSE
+ELEMENTO*/
+/*aqui seleciona quaisquer elementos <a> que residem
+dentro de um elemento <p>,mesmo se houver outros elementos 
+aninhados entre eles*/
+p a {
+	color: green;
+
+}
+#teste a {
+	color: black;
+}
+
+
+
+
+/*SELETOR IRMAO DE ADJACENTE SELECIONA UM ELEMENTO QUE É O IRMAO
+PROXIMO DE OUTRO */
+/*nesse exemplo, o proximo paragrafo depois do h1 será da cor
+vermelha, OBS:  É EXATAMENTE APÓS.(PROXIMA LINHA)*/
+h1+p{
+	color: red;
+}
+
+/*SELETOR DE IRMAO GERAL SELECIONA UM ELEMENTO QUE É IRMAO DE OUTRO,
+EMBORA ELE NAO PRECISE SER O ELEMENTO DIRETAMENTE PRECEDENTE*/
+/*nesse exemplo basta apenas que seja irmao de h2 para que o 
+paragrafo seja formatado, nao necessariamente sendo o adjacente
+ou seja(o exatamente abaixo do h2)*/
+h2~p{ 
+	color: gray;
+}
+
+
+
+
+
+
+
+
+

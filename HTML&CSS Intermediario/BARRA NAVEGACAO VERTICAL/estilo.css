@@ -1,0 +1,100 @@
+
+/*
+barra de navegação vertical
+
+
+ul{
+	
+	list-style-type:none ;define o tipo de lista, colocando none retiramos as bolinhas
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	padding: 10px 20px  ;
+	background: url(imagens/seta.png) no-repeat left center ;/*aqui utilizamos o
+	no repeat para a imagem aparecer apenas uma vez dentro do local
+	designado(PODEMOS APOS O NO REPEAT COLOCAR (CENTER, LEFT E RIGHT)
+	PARA COLOCAR A IMAGEM ONDE QUEREMOS 
+
+	
+}
+
+
+*/
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+ul a{
+	
+	width: 200px;
+	height: 40px;
+	display: block;
+	color: #000;
+	text-decoration: none;
+	text-indent: 40px;
+	line-height: 40px; /*DEFINIMOS A ALTURA DO TEXTO DENTRO DO BLOCO
+	POR PADRAO VEM NA MESMA ALTURA DO FONT SIZE.*/
+	background: #F7B600 url(imagens/menu.png) no-repeat left bottom;
+	/*AQUI NO BACKGROUND COLOCAMOS UMA COR DE FUNDO , PARA CASO
+	A IMAGEM NAO CARREGAR POR ALGUM MOTIVO AINDA FIQUE COM ALGUMA
+	COR.(COR USADA #F7B600)*/
+}
+
+a:hover{
+	background-position: right bottom ;
+	/*AQUI PEGAMOS A IMAGEM E JOGAMOS ELA PARA ESQUERDA QUANDO
+	O MOUSE ESTA EM CIMA DELA, DANDO UM EFEITO DE COR*/
+	background-color: #f99200 ;
+	/*AQUI DEFINIMOS A COR PARA CASO A IMAGEM NAO CARREGUE AINDA
+	TENHA UMA CERTA INTERAÇÃO COM O USUARIO.(UTILIZADO #F99200)*/
+	color: #FFF;
+}
+
+/*BASICAMENTE, NO ID HOME, ONDE TEM O ID NAVEGACAO , O PROXIMO
+(a) QUE VIER DEPOIS DA TAG COM A CLASSE HOME TERÁ ESSA FORMATAÇÃO*/
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a,
+#noticias #navegacao .noticias a,
+#contato #navegacao .contato a{
+	background-position: right bottom;
+	background-color: #f99200;
+	color: #fff;
+}
+
+/*outro modo de fazer é colocando uma class no li e falando que 
+o proximo A que achar ficara com aquela formatação ali. 
+no caso ficaria 
+
+a: hover, .selecionado{
+	background-position: right bottom;
+	background-color: #f99200;
+	color: #fff;
+}
+
+OBSERVE QUE SELECIONADO É A CLASSE QUE COLOCARIAMOS APOS O LI
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
