@@ -1,37 +1,57 @@
 
+*{
+	margin: 0px;
+	padding: 0px;
 
 
-body{
-	background: #E4E1E1
-;
 }
 
+body{
+	background: #E4E1E1;
+	width: 100%;
+	
+	text-align: center;
+
+
+}
+/*INICIO CABEÇALHO*/
+
 #cabecalho{
-	background: orange;
-	height: 50px;
-	margin: 5px auto;
+	width: 100%;
+	background: #f7b600;
+	height: 80px;
+	
 	text-align: center;
 	padding: 30px;
 
 	
 }
 
+
 .grande{
-	font-size: 30px;
+	font-size: 40px;
+	font-family: "Trebuchet", Helvetica, sans-serif ;
+
 }
 #branco{
 	color: white;
 }
 .links-cabecalho{
+	margin: 100px 10px;
+	font-size: 20px;
+
+	
+}
+#links-cabecalho a:link , #links-cabecalho a:visited {
 	color: white;
 	text-decoration: none;
-	padding: 10px;
-	margin-top: 200px ;
-	a: link::color: #b9c941 ;
+
 
 }
-#margem{
-	margin: 10px;
+#links-cabecalho a:hover{
+	background-color: white;
+	color: orange;
+
 }
 
 
@@ -40,42 +60,50 @@ body{
 	color: orange;
 }
 
-#mainPrincipal{
-	padding: 20px;
-	background: white;
-	height:900px;
-
-
-}
-.divMain1{
-	float: left;
 
 	
+/*INICIO MAIN */
+h2{
+	background-color: #ccc;
 }
-
-/*
+}
 .clear{
 	clear: both;
-}*/
-#maincategoria{
-	width: 80%;
+}
+
+.flex1{
+	float: left;
+	width: 700px;
+	background-color: white;
 	text-align: center;
-	margin-right: 100px;
-	margin-left: 100px ;
-	background: white;
-	padding: 30px;
+	margin-left: 30%;,
+	margin-bottom: 10px;
+	margin-top: 10px;
+
+}
+.flex2{
+	float: left;
+	background-color: white;
+	width: 160px;
+	padding: 20px;
+	margin: 1px 20px;
+	padding: 5;
 
 
 }
-.tituloPostagem{
-	color: orange;
-}
-#postagemRecente{
-	background: gray;
-}
-.direita{
 
-	width: 30;
-	height: 30;
-	float: right;
+
+
+a:link , a:visited{
+	color: #f7b600;
+	text-decoration: none;
+
 }
+a:hover{
+	text-decoration: underline;
+
+}
+
+
+
+
