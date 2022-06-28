@@ -1,0 +1,42 @@
+/*ESTILIZANDO FORMULARIOS*/
+body{
+	font-family: "Trebuchet MS" , Helvetica, sans-serif ;
+}
+
+fieldset{
+	padding: 1em;
+	border: 1px solid #ccc;
+	background: #f8f8f8;
+	margin: 1em 0;
+}
+
+legend{
+	font-weight: bold;
+}
+
+label{/*por padrao label é do tipo inline*/
+	display: block;
+	cursor: pointer;
+
+}
+input {/*[type="text"]aqui definimos que apenas os imputs com o 
+atributo type="text" terao essa formatação, definimos isso com []*/
+	width: 20em;
+/*ENTRETANTO´É RECOMENDADO USAR CLASSES PARA ESSE TIPO DE FORMATAÇÃO
+POIS PODE OCORRER DE VOCÊ PRECISAR USAR MAIS DE UM TIPO DE 
+TYPE TEXT COM DIFERENTE FORMATAÇÃO!!*/
+}
+
+
+textarea{
+	width: 20em;
+	height: 10em;
+}
+input.radio, input.checkbox, input.submit{
+	width: auto;
+}
+
+
+.radio{
+	margin-right: 1em;
+}

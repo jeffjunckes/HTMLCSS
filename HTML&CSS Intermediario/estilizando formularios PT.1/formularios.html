@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<title> estilizando formularios</title>
+	</head>
+	<body>
+		<h2>Estilizando formularios</h2>
+		<form>
+			<fieldset><!--utilizado para agrupar dados semelhantes-->
+				<legend>Detalhes de contato</legend><!--legenda para o agrupamento de dados semelhantes, no nosso exemplo, tudo que esta entre o legend diz respeito a detalhes de contato-->
+				<div>
+					<label for="nome">Nome:</label><!--usado para identificar as caixas de texto-->
+					<input type="text" name="nome" id="nome">
+				</div>
+					<!--IMPORTANTE!!!!
+						PODEMOS TAMBEM USAR 
+					<div>
+						<LABEL>
+							<input type="text" name="nome">
+						</LABEL>
+					</div>
+					-->
+				<div>
+					<label for="nome">Email:</label><!--usado para identificar as caixas de texto-->
+					<input type="text" name="nome" id="email">
+				</div>
+				<div>
+					<label for="nome">URL:</label><!--usado para identificar as caixas de texto-->
+					<input type="text" name="nome" id="url">
+				</div>
+				
+			</fieldset>	
+
+			<fieldset>
+				<legend>comentarios</legend>
+					<div>
+						<label for="mensagem">Mensagem:</label>
+						<textarea name="mensagem" id="mensagem"></textarea>
+					</div>
+			</fieldset>
+			<fieldset>
+				<legend>Lembrar de mim</legend>
+				<div>
+					<label>
+						<input class="radio" type="radio" name="lembrar" id="sim"> Sim<br>
+					</label>
+				</div>
+				<div>
+					<label>
+						<input class="radio" type="radio" name="lembrar" id="nao"> Nao<br>
+					</label>
+				</div>
+			</fieldset>
+
+		</form>
+
+
+
+	</body>
+</html>

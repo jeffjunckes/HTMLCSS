@@ -1,0 +1,50 @@
+/*ESTILIZANDO TABELAS*/
+
+body{
+	font-family: "Trebuchet MS" , Helvetica, sans-serif ;
+}
+
+table{
+	width: 600px;
+	border-collapse: collapse ;/*para deixar uma borda colada na 
+	outra pois o padrao é ficar separada(opção: separate)*/
+
+}
+
+th, td{
+
+	padding: 7px;
+
+
+}
+th{
+	text-transform: uppercase;/*transforma todas letras em maiusculas*/
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #111;
+	text-align: left;/*alinhar textos a esqueda*/
+	font-size: 90%;
+	letter-spacing: 0.1em;/*define um espaçamento maior entre as letras*/
+
+}
+
+tr.alternado{
+	background-color: #efefef;
+}
+tr:hover{/*define quando o mouse esta em cima de alguma tr*/
+	background-color: #c3e6e5;
+
+}
+.numero{
+	text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+

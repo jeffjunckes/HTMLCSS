@@ -1,53 +1,37 @@
-/*layout liquido*/
+/*layout largura fixa*/
 body{
 	font-family: "Trebuchet MS",Helvetica, sans-serif;
 	background: #f2f2f2;
 }
-#container{/*layout liquido utiliza porcentagem para definir o
-tamanho*/
-	width: 85%;
+#container{
+	width: 720px;
 	margin: 0 auto;
-	background: white;
-	min-width: 720px ;/*define uma largura minima*/
-	/*max-width: 960px;define uma largura maxima
-	  max-height: ;define uma altura maxima
-	  min-height:  ; define uma altura minima
-
-
-
-	*/
+	background: url(../imagensliquidas/imagens/coluna.png) repeat-y;
+	/*usamos a imagem do diretorio para repetir apenas no eixo
+	Y(vertical) para dar um efeito de coluna no backgound*/
 
 }
 
 
 
 #marca{	
-	width: 100%;
 	height: 100px;
 	background: #9e9e9e;
 	text-align: center;
 	line-height: 100px;
 }
 #conteudo{
-
-	width: 75%;
+	width: 520px;
 	float: right;
-}
-#navegacao {
-	width: 23%;
-	float: left;
-	padding-top: 20px;
-	padding-bottom: 20px ;
-	background: #d1d1d1;
 }
 
 #conteudo-principal{
-	width: 64%;
+	width: 320px;
 	float: left;
 
 }
 #conteudo-secundario{
-	width: 33%;
+	width: 180px;
 	float: right;
 	background: #d1d1d1;
 }
@@ -58,7 +42,13 @@ tamanho*/
 	padding-left: 20px;
 	padding-right: 20px;
 }
-
+#navegacao {
+	width: 180px;
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px ;
+	background: #d1d1d1;
+}
 #navegacao ul{
 	list-style: none;
 }
