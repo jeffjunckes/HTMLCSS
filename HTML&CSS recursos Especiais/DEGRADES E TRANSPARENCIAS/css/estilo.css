@@ -1,0 +1,43 @@
+
+/*IMPORTANTE, NAS DOCUMENTAÇÕES DE GRADIENTE TEM TODAS 
+AS OPÇÕES DE GRADIENTE QUE PODEMOS UTILIZAR*/
+
+#caixa{
+	width: 300px;
+	height: 300px;
+	background-image: url(../camera.png);
+
+}
+
+#caixa h1{
+	background: rgba(255, 255,255, 0.5);/*RGBA é um RGB e o ultimo
+	valor é a tansparencia*/
+}
+
+
+#caixa-gradiente-linear{
+	width: 300px;
+	height: 300px;
+	background: linear-gradient(to left, red, green) ;
+
+	/*definimos o to left para dizer que o vermelho
+	começa da direita e vai indo para esquerda ou seja to left .*/
+
+}
+
+#caixa-gradiente-radial{
+	width: 300px;
+	height: 300px;
+	background: radial-gradient(red,green,yellow);/*usado para fazer
+	em formato de circulo de dentro pra fora*/
+
+	}
+
+.cx-Exemplo{
+	background: radial;
+	background: linear-gradient(80deg, red,green);
+	/*IMPORTANTE DA PRA COLOCAR QUANTAS CORES VOCÊ QUISER*/
+	/*aqui definimos o  degrade em graus*/
+
+}
+

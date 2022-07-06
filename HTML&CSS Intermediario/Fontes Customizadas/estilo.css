@@ -1,0 +1,27 @@
+@font-face{/*UTILIZADO PARA DEFINIR A FONTE NO ARQUIVO*/
+	font-family: "Road Rage";/*AQUI DEFINIMOS COMO VAMOS CHAMAR*/
+	src: url("fontes/RoadRage.woff");/*AQUI DEFINIMOS ONDE O ARQUIVO
+	ESTÁ*/
+}
+@font-face{/*UTILIZADO PARA DEFINIR A FONTE NO ARQUIVO*/
+	font-family: "bringheart";/*AQUI DEFINIMOS COMO VAMOS CHAMAR*/
+	src: url("fontes/BringHeart.woff");/*AQUI DEFINIMOS ONDE O ARQUIVO
+	ESTÁ*/
+}
+
+
+#fontes a{
+	color: red;
+	text-decoration: none;
+	text-transform: lowercase;
+	font-family: "Road Rage";/*AQUI CHAMAMOSA  FONTE QUE 
+	CRIAMOS NO @font-face*/
+
+}
+#fontes a:hover{
+	font-family: "bringheart"
+
+	background: #ddd;
+	
+	text-transform: uppercase;
+}

@@ -1,0 +1,36 @@
+#caixa-Radius{
+	width: 300px;
+	height: 300px;
+	background-color: #b9c941;
+	padding: 10px;
+	margin: 10px;
+	-webkit-border-radius: 10px 50px 80px 100px;
+	-moz-border-radius: 10px 50px 80px 100px;
+	border-radius: 10px 50px 80px 100px;/*define um arredondamento para caixa*/
+	/*da esqueda pra direita sempre*/
+}
+	/*MUITA ATENÇAO, ALGUNS BROWSERS NAO ENTENDEM O BORDER RADIUS
+	ENTAO UTILIZAMOS O PREFIXO -webkit para chrome e safari,
+	-moz- para versoes mais antigas do mozzila */
+
+
+#caixa{
+	width: 300px;
+	height: 300px;
+	background-color: #b9c941;
+	padding: 50px;
+	box-sizing: border-box;/*utilizado para tirar o comportamento
+	do padding de somar ao tamanho total da caixa, a caixa volta
+	a ter 300 pixels e nao 400(300 definidos + 50 de padding 
+	cada lado*/
+	-webkit-box-sizing: border-box;/*-webkit- para chrome e safari*/
+	-moz-box-sizing: border-box;/*-moz- para mozzila firefox*/
+}
+/*IMPORTANTE, QUANDO DEFINIMOS UM PADDING , O VALOR DO 
+PADDING SOMA AO WIDTH OU SEJA SE VOCÊ COLOCAR UM PADDING DE 
+50 PX SUA IMAGEM PASSA A TER 400PX , QUE SAO OS 300 NORMAIS
++ 50 PX DE CADA LADO DA CAIXA*/
+
+
+
+

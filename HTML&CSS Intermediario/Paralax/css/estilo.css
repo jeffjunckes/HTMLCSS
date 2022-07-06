@@ -21,13 +21,22 @@ h3 {
 	text-align: center;
 
 }
+p{
+	margin-bottom: 20px;
+}
 
 
 
 /*EFEITO PARALLAX*/
-.caixa1, .caixa2{
-	border: 1px solid red;
+.caixa1, .caixa2, .caixa3, .caixa4{
+	position: relative;
 	height: 100%;
+	opacity: 0.7;/*define opacidade*/
+	background-repeat: no-repeat;
+	background-size: cover;/*PARA O BACKGROUND COBRIR TODA A AREA*/
+	background-position: center;
+	background-attachment: fixed;/*FAZ COM QUE O BACKGROUND FIQUE FIXO
+	AO ROLAR CRIANDO ENTAO O EFEITO DE PARALAXIA*/
 }
 
 .caixa1{	
@@ -36,10 +45,31 @@ h3 {
 
 
 .caixa2{
-	background-image: url(../imagens/imagem2.jpg);
+	background-image: url(../imagens/imagem2.jpg) ;
 }
+.caixa3{
+	background-image: url(../imagens/imagem3.jpg) ;
+}
+.caixa4{
+	background-image: url(../imagens/imagem4.jpg) ;
+}
+.conteudo-titulo{
+	position: absolute;
+	left: 0%;
+	top: 45%;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	opacity: 0.7;
 
-
+}
+.conteudo-titulo span.titulo{
+	color: #fff;
+	background-color: #111;
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 5px;/*define espaçaento entre as letras*/
+}
 
 
 
