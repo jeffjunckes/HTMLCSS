@@ -1,0 +1,108 @@
+
+@-webkit-keyframes animacao-caixa{/*definimos o nome da animação*/
+	from{/*estilo inicial*/
+		background: red;
+	}
+	to{/*formatação final*/
+		background: green;
+	}
+}
+@-moz-keyframes animacao-caixa{/*definimos o nome da animação*/
+	from{/*estilo inicial*/
+		background: red;
+	}
+	to{/*formatação final*/
+		background: green;
+	}
+}
+@-o-keyframes animacao-caixa{/*definimos o nome da animação*/
+	from{/*estilo inicial*/
+		background: red;
+	}
+	to{/*formatação final*/
+		background: green;
+	}
+}
+@keyframes animacao-caixa{/*definimos o nome da animação*/
+	from{/*estilo inicial*/
+		background: red;
+	}
+	to{/*formatação final*/
+		background: green;
+	}
+}
+@keyframes animacao-borda{
+	from{
+		background: yellow;
+		border-radius: 0px;
+	}
+	to{
+		background: green;
+		border-radius: 900px;
+	}
+
+}
+@keyframes animacao-movimento{
+	from{
+		background: yellow;
+		border-radius: 0px;
+		top: 0;
+		left: 0;
+	}
+	to{
+		background: green;
+		border-radius: 900px;
+		top: 200px;
+		left: 200px;
+	}
+
+
+}
+
+
+
+
+/*o que esperamos nesse keyframe é que o backgound comece no 
+vermelho e vá até o verde*/
+/*IMPORTANTE, PARA ANIMATION UTILIZAMOS TAMBEM OS PREFIXOS 
+DE COMPATIBILIDADE -WEBKIT- -MOZ- E -O-*/
+
+#caixa{
+	width: 300px ;
+	height: 300px ;
+	background: red ;
+	animation-name: animacao-caixa;
+	animation-duration: 5s;
+}/*aqui chamamos a animação que criamos la em cima e definimos
+o tempo que ela vai levar para ir do vermelho ate o verde com o 
+animation duration*/
+
+#caixa2{
+	width: 300px ;
+	height: 300px ;
+	background: red ;
+	animation-name: animacao-borda;
+	animation-duration: 5s;
+	animation-delay: 3s;/*define o tempo de espera para começar
+	a animação*/
+	animation-iteration-count: 2;/*define quantas vezes vai ser 
+	repetido a animação*/
+	animation-direction: alternate;/*define a direção da animação*/
+
+}
+
+
+#caixa3{
+	width: 300px ;
+	height: 300px ;
+	background: red ;
+	/*para fazer tudo em uma linha so usamos o animation
+	começamos com o nome da animação, quantos segundos vai durar,
+	o delay dela, quantas vezes vai repetir, e por ultimo a direção*/
+	animation: animacao-movimento 5s 3s 2 alternate;
+	position:relative ;/*para conseguirmos mudar a posição 
+	la em cima na animação que criamos*/
+	
+}
+
+
