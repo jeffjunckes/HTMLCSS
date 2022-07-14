@@ -1,0 +1,58 @@
+#conteudo{
+	background: #dcdcdc;
+	
+	height: 400px;
+	display: flex;
+	/*row / row-reverse / column / column-reverse*/
+	flex-direction: row;
+	/*nowrap / wrap / wrap-reverse*/
+	flex-wrap: nowrap ;/*
+	flex-wrap : para definir quebras de layout 
+	nowrap:  para q se por acaso o container for 
+	diminuido nao quebre a linha(eles sao espremidos).
+	wrap:  para que quebrem a linha de acordo com o conteudo;
+	wrap-reverse: para inverter a ordem de exibição ao quebrar;
+	
+
+	/*JUSTIFY-CONTENT*/
+	/*flex-start /  flex-end / center / space-between / space-around*/
+	justify-content:space-around ;
+	/*
+		flex-start:  alinha no canto superior esquerdo;
+		flex-end:  cola conteudo no canto superior direito;
+		center:  cola conteudo no centro superior;
+		space-between:  distribui os items adicionando espaçamento;
+		(de acordo com o conteudo os dois conteudos da ponta ficam
+		colados e é calculado o espaço para que distribua os conteudos)
+		space-around: os items das extremidades sao distribuidos ;
+		juntos com os outros items, nao ficam colado no canto da tela
+		diferente do space-between
+
+	*/
+	/*ALIGN-ITEMS*/
+	/* stretch / center / flex-start / flex-end / baseline */
+	align-items: ;
+	/*
+		stretch: items preenchem toda a altura do container(esticados)
+		center: items ficam centralizados (respeitando o justify content) ;
+		flex-start:  items ficam colados na parte superior;
+		flex-end:  items ficam colados na parte inferior;
+		baseline:  alinha o item baseado na linha do texto;
+
+	*/
+
+
+	}
+
+.item{
+	width: 100px;
+	height: 100px;
+
+	background: white;
+	border:  1px solid gray;
+	margin: 10px;
+
+
+}
+
+

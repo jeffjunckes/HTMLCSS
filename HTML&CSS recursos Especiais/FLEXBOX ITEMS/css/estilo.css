@@ -1,0 +1,77 @@
+#conteudo{
+	background: #dcdcdc;
+	
+	height: 400px;
+	display: flex;
+	}
+
+.item{
+	width: 100px;
+	height: 100px;
+
+	background: white;
+	border:  1px solid gray;
+	margin: 10px;
+	/*PARA DEFINIR A PROPORÇÃO QUE O ITEM VAI CRESCER
+	UTILIZAMOS FLEX-GROW, OU SEJA DEFINE A PROPORÇÃO DE ESPAÇO
+	OCUPADO POR UM ITEM.PADRAO É 0*/
+	/*BASICAMENTE O FLEX-GROW DEFINE O VALOR QUE O SEU ITEM VAI 
+	OCUPAR EM RELAÇÃO AOS OUTROS. OU SEJA SE VOCÊ QUISER UM ITEM
+	MAIOR QUE O OUTRO VOCÊ USA O FLEXGROW*/
+	/*ao definir o valor 1 o item da classe vai querer ocupar todo o 
+	espaçamento da direção onde ele está*/
+
+	flex-grow: 1 ;
+
+
+}
+
+.item1{
+	flex-grow: 1;
+}
+
+/*PARA DEFINIR A CAPACIDADE DE REDUÇÃO DE TAMANHO DO ITEM 
+USAMOS O FLEX-SHRINK(O CONTRARIO DO FLEX-GROW.
+O PADRAO É 1.
+OU SEJA QUANTO MAIS VOCÊ DIMINUI SEU LAYOUT MENOR É A EXIBIÇÃO
+DO ITEM DA CLASSE.
+*/
+.item2{
+	flex-shrink: 2 ;
+}
+
+
+/*PARA INDICAR O TAMANHO INICIAL DO FLEX ITEM ANTES DA
+DISTRIBUIÇÃO DO ESPAÇO RESTANTE UTILIZAMOS O FLEX-BASIS */
+.item3{
+	flex-basis: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*order para definir a ordem de exibição do item*/
+/*OBVIAMENTE QUE VOCÊ PRECISA DEFINIR ESSA CLASSE NO HTML
+QUANTO MENOR A ORDEM PRIMEIRO APARECE*/
+.ordem1{
+	order: 1;
+}
+.ordem2{
+	order: 2;
+}
+.ordem3{
+	order: 3;
+}
+.ordem4{
+	order: 4;
+}
